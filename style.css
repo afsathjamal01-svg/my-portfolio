@@ -87,7 +87,7 @@ section .content{
 
 
 .right-content{
-    position:absolute ;
+    position:relative ;
     
     
 }
@@ -152,7 +152,7 @@ section .content{
 .left-content{
     display: flex;
     flex-direction: row;
-    margin-left: 500px;
+    margin-left: 0;
 }
 
 
@@ -170,8 +170,8 @@ section .content{
 
 
 .left-content .img-item img{
-    width: 32vw;
-    height: 30vw;
+     width: min(32vw, 35rem);
+    height: min(32vw, 35rem);
     border-radius: 50%;
     border: .01rem solid var(--bg-color);
     background: var(--main-color);
@@ -446,7 +446,7 @@ section .content{
     height: 26rem;
     resize: none;
 }
-.contact-box .field-box input:focus
+.contact-box .field-box input:focus,
 .contact-box .field-box textarea:focus{
     border-color: var(--main-color);
 
@@ -509,3 +509,4 @@ section .content{
         
     }
 }
+
